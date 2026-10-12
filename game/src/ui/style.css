@@ -609,7 +609,12 @@ main { max-width: 1160px; margin: 0 auto; padding: 16px 16px 64px; }
 
 /* Settings popover (language, money, theme) */
 .tools { position: relative; }
-.gear { font-size: 18px; line-height: 1; }
+.gear { line-height: 1; }
+.tools .pill-btn { color: var(--ink); }
+/* At night the header buttons are lifted off the dark paper so they read as buttons. */
+:root[data-theme="dark"] .tools .pill-btn { background: #3a4670; border-color: var(--ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tools .pill-btn { background: #3a4670; border-color: var(--ink); } }
+:root:root .tools .pill-btn:hover { background: var(--stamp); color: var(--on-stamp); }
 .settings {
   position: absolute; right: 0; top: calc(100% + 8px); z-index: 30; width: min(320px, calc(100vw - 32px));
   background: var(--note); color: var(--ink); border: 1px solid var(--rule-strong); border-radius: 12px;
