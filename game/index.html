@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
+  <!-- With JavaScript the game draws its own start screen: hide the static text meant for search engines and
+       no-JS visitors before the first paint, so the page does not jump. -->
+  <script>document.documentElement.className = 'js' + (location.hash.startsWith('#d=') ? ' shared' : '');</script>
   <title>Lifesim · Simulate the life you could have had</title>
   <meta name="description" content="Chào đời ở một nơi bất kỳ trên Trái Đất, sống trọn một kiếp người với xác suất lấy từ số liệu thật của từng nước, rồi nối dõi qua các thế hệ. Miễn phí, mã nguồn mở, chạy ngay trong trình duyệt.">
   <meta property="og:title" content="Lifesim · Simulate the life you could have had">
@@ -47,9 +50,11 @@
   <main>
     <p id="loading"><span class="spin" aria-hidden="true">🌍</span> Loading data…</p>
     <section id="intro">
+      <div class="seo">
       <h2>Lifesim · Simulate the life you could have had</h2>
       <p>Lifesim is a free, open-source life simulator in your browser. Be born anywhere on Earth with the real odds of each country and live year by year: school, work, marriage, children, migration, illness, money and old age. Every probability comes from real data (UN, World Bank, WHO, ILO, UNESCO), with the source under each event. When a life ends, carry on as your child.</p>
       <p>Lifesim là game mô phỏng cuộc đời miễn phí, mã nguồn mở, chạy ngay trong trình duyệt. Bạn chào đời ở một nơi bất kỳ trên Trái Đất, với xác suất thật của từng nước, rồi sống từng năm: đi học, đi làm, kết hôn, sinh con, di cư, bệnh tật, tiền bạc, tuổi già. Mọi xác suất lấy từ số liệu thật (Liên Hợp Quốc, World Bank, WHO, ILO, UNESCO), nguồn ghi ngay dưới mỗi sự kiện. Hết một đời, bạn sống tiếp đời con.</p>
+      </div>
       <noscript><p>Lifesim needs JavaScript to run. / Lifesim cần JavaScript để chạy.</p></noscript>
     </section>
     <div id="game" hidden>

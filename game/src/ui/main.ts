@@ -87,8 +87,16 @@ function intro(): void {
     'Mỗi năm có khoảng 130 triệu trẻ em chào đời, và bạn sẽ là một trong số đó. Bạn sinh ra ở nước nào, là trai hay gái, nhà giàu hay nghèo đều ngẫu nhiên, đúng theo tỷ lệ ngoài đời thật. Những gì xảy ra sau đó cũng theo xác suất lấy từ số liệu thật của nước bạn (Liên Hợp Quốc, World Bank, WHO, ILO…); nguồn ghi ngay dưới mỗi sự kiện.',
     'About 130 million children are born every year. You will be one of them: country, sex and family are drawn at random in the proportions of the real world. Everything that follows happens with probabilities taken from real data for your country (UN, World Bank, WHO, ILO…); the source is shown under each event.')}</p>
     </div>`;
-  $('born').onclick = newLine;
-  if (stored()) $('resume').onclick = () => resume(stored()!);
+  $('born').onclick = () => whenReady(newLine);
+  if (stored()) $('resume').onclick = () => whenReady(() => resume(stored()!));
+}
+
+/** The start screen is shown before the data has loaded; a click made meanwhile waits for it. */
+function whenReady(go: () => void): void {
+  if (world) { go(); return; }
+  $('note').textContent = tr('Đang tải số liệu…', 'Loading data…');
+  document.querySelectorAll<HTMLButtonElement>('.hero-btns button').forEach(b => { b.disabled = true; });
+  ready.then(go);
 }
 
 function newLine(): void {
@@ -585,7 +593,12 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('settin
 document.documentElement.lang = lang;
 $('title').textContent = document.title = GAME_TITLE[lang];
 renderSettings();
-load().then(() => {
+// The start screen needs no data, so it is drawn at once (no jump when the data arrives); a shared link
+// waits on the loading line instead.
+const ready = load();
+const openingShared = location.hash.startsWith('#d=');
+if (!openingShared) { $('loading').hidden = true; intro(); }
+ready.then(() => {
   $('loading').hidden = true;
   let m: string | null = null;
   try { m = localStorage.getItem(MONEY_STORE); } catch { /* storage blocked */ }
@@ -597,6 +610,6 @@ load().then(() => {
   // Opening someone else's family line replaces your saved one: ask first.
   if (shared && (!mine || JSON.stringify(mine.lives) === JSON.stringify(shared.lives)
     || confirm(tr('Mở dòng họ được chia sẻ sẽ thay cho dòng họ bạn đang chơi dở. Vẫn mở?', 'Opening this shared family line replaces the one you are playing. Open it anyway?')))) resume(shared);
-  else intro();
+  else if (openingShared) intro();
 })
   .catch(err => { $('loading').textContent = String(err); });

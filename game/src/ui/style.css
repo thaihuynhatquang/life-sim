@@ -206,6 +206,7 @@ button.big { font-size: 18px; padding: 14px 24px; }
 
 main { max-width: 1160px; margin: 0 auto; padding: 16px 16px 64px; }
 .card { position: relative; background: var(--note); border-radius: 4px; box-shadow: var(--shadow); }
+html.js #intro .seo, html.js:not(.shared) #loading { display: none; }
 #loading { text-align: center; padding: 72px 0; color: var(--ink-soft); font-family: var(--font-hand); font-size: 22px; }
 .spin { display: inline-block; font-size: 30px; animation: spin 3s linear infinite; vertical-align: middle; }
 
