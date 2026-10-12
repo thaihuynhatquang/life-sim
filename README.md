@@ -4,13 +4,19 @@
 
 **Lifesim is a free, open-source life simulator that runs in your browser.** You are born as a random baby somewhere on Earth, with the real odds of every country, and live that life year by year. Every probability comes from real statistics (UN, World Bank, WHO, ILO, UNESCO and more), and the source is shown under each event. Play it in English or Vietnamese.
 
-**Play:** link coming soon (Netlify). · **Data:** [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)
+**▶ Play now: [life-sim.quangthn.net](https://life-sim.quangthn.net/)** · **Data:** [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)
 
 You are born somewhere in the world with real-world odds (country, sex, family circumstances), then live that life one year at a time: school, work, marriage, children, migration, illness, money, old age, death. When the life ends, you can carry on as one of your children. The game runs in the browser, in Vietnamese and English.
 
 It belongs to the long-standing genre of text life simulators (BitLife and its many predecessors), and to the "birth lottery" thought experiment: *what would your life look like if you were born as a random baby today?* What it adds is the data: 158 countries, calibrated and checked against the statistics they come from.
 
-> **Screenshot:** coming soon. The game has a scrapbook-style interface with light and dark themes and works on phones.
+[![Lifesim: a year-by-year life with a choice to make at 18](docs/images/play.png)](https://life-sim.quangthn.net/)
+
+| Start screen | Dark theme |
+| --- | --- |
+| [![Lifesim start screen](docs/images/intro.png)](https://life-sim.quangthn.net/) | [![Lifesim in dark theme](docs/images/play-dark.png)](https://life-sim.quangthn.net/) |
+
+The interface looks like a family scrapbook, with light and dark themes, and works on phones.
 
 ## How it works
 

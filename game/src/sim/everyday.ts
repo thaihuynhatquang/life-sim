@@ -49,8 +49,8 @@ function survivors(p: Person, age: number): number {
   return l;
 }
 
-/** One line for a year in which nothing else happened. */
-export function quietYear(p: Person): Line | undefined {
+/** One line for a year in which nothing else happened (always returns one). */
+export function quietYear(p: Person): Line {
   const a = p.age, key = `${p.nameKey}|quiet|${a}`, c = raisedIn(p).c, home = (p.residence ?? p.b.country).c;
   const female = p.b.sex === 'F';
   // About one quiet year in three gets a comparison with people of the same age, if one fits; the same
@@ -62,10 +62,21 @@ export function quietYear(p: Person): Line | undefined {
   }
   // Every everyday scene is told at most once in a life.
   const scenes = SCENES.map((s, i) => ({ s, i })).filter(({ s, i }) => !used.scenes.includes(i) && s.when(p, a));
-  if (!scenes.length) return undefined;
-  const { s, i } = scenes[Math.floor(u01(key) * scenes.length)];
-  used.scenes.push(i);
-  return { kind: s.kind, text: s.text(p) };
+  if (scenes.length) {
+    const { s, i } = scenes[Math.floor(u01(key) * scenes.length)];
+    used.scenes.push(i);
+    return { kind: s.kind, text: s.text(p) };
+  }
+  // No unused scene fits: a comparison if one is due, otherwise a plain line for this stage of life
+  // (these may repeat, but never two years running), so that no year is left empty.
+  const fact = peerFact(p, a, c, home, female);
+  if (fact && a - (used.facts[fact.kind] ?? -99) >= 5) { used.facts[fact.kind] = a; return fact; }
+  const pool = FILLERS.filter(f => f.when(p, a));
+  const last = p.log[p.log.length - 1]?.text.vi;
+  let j = Math.floor(u01(key + 'fill') * pool.length);
+  for (let k = 0; k < pool.length && pool[j].text(p).vi === last; k++) j = (j + 1) % pool.length;
+  const f = pool[j];
+  return { kind: f.kind, text: f.text(p) };
 }
 
 function peerFact(p: Person, a: number, c: Person['c'], home: Person['c'], female: boolean): Line | undefined {
@@ -100,6 +111,12 @@ const grandkids = (p: Person) => p.grandchildren.some(k => k.alive);
 const rich = (p: Person) => p.b.wealthPct > 0.6, poor = (p: Person) => p.b.wealthPct < 0.4;
 
 const SCENES: Scene[] = [
+  // Early years
+  { kind: 'family', when: (p, a) => a === 1, text: () => t('Bạn chập chững những bước đi đầu tiên.', 'You take your first wobbly steps.') },
+  { kind: 'family', when: (p, a) => a >= 1 && a <= 2 && p.mother.alive, text: () => t('Bạn bập bẹ gọi "mẹ" lần đầu, cả nhà mừng rỡ.', 'You say "mama" for the first time, and the whole family cheers.') },
+  { kind: 'family', when: (p, a) => a >= 2 && a <= 3, text: () => t('Bạn tập ăn bằng thìa; cơm rơi khắp sàn.', 'You learn to eat with a spoon; most of it lands on the floor.') },
+  { kind: 'family', when: (p, a) => a >= 2 && a <= 4, text: () => t('Bạn có một món đồ chơi không rời tay, đi đâu cũng mang theo.', 'You have a favourite toy that goes everywhere with you.') },
+  { kind: 'family', when: (p, a) => a >= 2 && a <= 5, text: () => t('Câu cửa miệng của bạn năm nay là "tại sao?".', 'This year your favourite word is "why?".') },
   // Childhood
   { kind: 'family', when: (p, a) => a >= 3 && a <= 6, text: () => t('Bạn mê nghe kể chuyện trước khi ngủ.', 'You love bedtime stories.') },
   { kind: 'family', when: (p, a) => a >= 5 && a <= 9 && !p.urban, text: () => t('Bạn tập bơi ở con sông gần nhà cùng lũ trẻ trong xóm.', 'You learn to swim in the river near home with the other children.') },
@@ -128,6 +145,20 @@ const SCENES: Scene[] = [
   { kind: 'family', when: (p, a) => a >= 60 && grandkids(p), text: () => t('Các cháu về chơi, nhà cửa rộn ràng cả tuần.', 'The grandchildren come to stay; the house is lively for a week.') },
   { kind: 'family', when: (p, a) => a >= 65, text: () => t('Bạn hay ngồi kể chuyện ngày xưa cho người trẻ nghe.', 'You often tell younger people stories of the old days.') },
   { kind: 'health', when: (p, a) => a >= 65, text: () => t('Sáng nào bạn cũng đi bộ một vòng quanh xóm.', 'Every morning you take a walk around the neighbourhood.') },
+];
+
+// Plain lines for a year with nothing else to tell; they may come back in a later year.
+const FILLERS: Scene[] = [
+  { kind: 'family', when: (p, a) => a < 6, text: () => t('Một năm lớn lên bình yên bên gia đình.', 'A peaceful year growing up with your family.') },
+  { kind: 'family', when: (p, a) => a < 6, text: () => t('Bạn cao thêm một chút; quần áo năm ngoái đã chật.', 'You grow a little taller; last year’s clothes no longer fit.') },
+  { kind: 'family', when: (p, a) => a < 18, text: () => t('Hè năm nay bạn chơi đến tối mịt mới về nhà.', 'This summer you play outside until dark.') },
+  { kind: 'school', when: (p, a) => a >= 6 && a < 18 && a - 6 < p.plan.schoolYears, text: () => t('Thêm một năm học trôi qua, điểm số không tệ.', 'Another school year goes by, with decent marks.') },
+  { kind: 'family', when: (p, a) => a >= 6 && a < 18 && a - 6 >= p.plan.schoolYears, text: () => t('Một năm nữa trôi qua; ngày nào bạn cũng phụ việc nhà.', 'Another year goes by; you help out at home every day.') },
+  { kind: 'family', when: (p, a) => a >= 18 && a < 60, text: () => t('Một năm bận rộn, chẳng có gì đặc biệt.', 'A busy year, with nothing special to report.') },
+  { kind: 'family', when: (p, a) => a >= 18 && a < 60, text: () => t('Bạn lo toan chuyện cơm áo như bao người.', 'Like everyone, you work to keep things going.') },
+  { kind: 'family', when: (p, a) => a >= 18, text: () => t('Năm nay bạn có thêm một thú vui nhỏ.', 'This year you pick up a small new hobby.') },
+  { kind: 'family', when: (p, a) => a >= 60, text: () => t('Một năm thong thả trôi qua.', 'A slow, easy year goes by.') },
+  { kind: 'family', when: (p, a) => a >= 60, text: () => t('Bạn dành nhiều thời gian hơn với hàng xóm.', 'You spend more time with the neighbours.') },
 ];
 
 function friend(p: Person): string {

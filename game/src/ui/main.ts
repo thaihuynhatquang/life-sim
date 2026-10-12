@@ -21,7 +21,9 @@ import { setReturnsModel, type ReturnsModel } from '../sim/finance.ts';
 import { decodeSave, encodeSave, firstLife, MODEL_VERSION, rebuild, type Factory, type Save, type SavedLife } from '../sim/save.ts';
 
 const $ = (id: string) => document.getElementById(id)!;
-let lang: Lang = 'vi';
+// English by default; a language picked in the settings is remembered.
+const LANG_STORE = 'one-life.lang';
+let lang: Lang = (() => { try { return localStorage.getItem(LANG_STORE) === 'vi' ? 'vi' : 'en'; } catch { return 'en'; } })();
 let world: World;
 let p: Person | undefined, rng: Rng, seed = 0, shown = 0;
 let pending: Decision | undefined;
@@ -486,6 +488,7 @@ function lineageStrip(gens: Gen[]): string {
 
 function setLang(l: Lang): void {
   lang = l;
+  try { localStorage.setItem(LANG_STORE, l); } catch { /* blocked storage: the choice lasts this visit */ }
   document.documentElement.lang = l;
   $('title').textContent = GAME_TITLE[lang];
   document.title = GAME_TITLE[lang];
@@ -579,6 +582,7 @@ document.addEventListener('click', e => {
   if (!$('settings').hidden && !$('settings').contains(e.target as Node)) toggleSettings(false);
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('settings').hidden) { toggleSettings(false); $('settings-btn').focus(); } });
+document.documentElement.lang = lang;
 $('title').textContent = document.title = GAME_TITLE[lang];
 renderSettings();
 load().then(() => {
