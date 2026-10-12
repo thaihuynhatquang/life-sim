@@ -1,0 +1,37 @@
+
+=== 1. Life expectancy, exact: wealth-mixed model vs UN (all countries, both sexes) ===
+max |diff| -0.109 y (URY F), scale range 1.010..1.034
+
+simulated 200,000 lives in 0.6s
+
+=== 2. Birth lottery: where babies are born ===
+IND 17.8% (real 17.7%) | CHN 6.7% (real 6.8%) | NGA 5.7% (real 5.7%) | PAK 5.2% (real 5.2%) | IDN 3.4% (real 3.4%) | COD 3.3% (real 3.3%) | ETH 3.2% (real 3.1%) | USA 2.7% (real 2.8%)
+boys 51.14% (real 51.34%), total variation distance 0.86%
+
+=== 3. Top 15 countries by births: simulated vs real ===
+          n |        e0 M    UN |        e0 F    UN |  U5MR    UN |  <$3/d    WB basis | Q1-Q5 e0 gap
+IND   35578 |    70.6±0.4  70.5 |    73.4±0.4  73.6 |  28.2  27.6 |   2.8%  2.6% poverty | 7.9y
+CHN   13354 |    75.2±0.6  75.2 |    80.8±0.6  80.9 |   7.3   7.2 |   0.0%  0.0% gdp     | 6.0y
+NGA   11494 |    54.2±0.7  54.2 |    54.3±0.7  54.7 |  99.1 104.2 |  41.6% 41.8% poverty | 16.8y
+PAK   10461 |    65.6±0.7  65.3 |    69.7±0.7  70.2 |  57.8  59.2 |  22.5% 23.0% poverty | 8.5y
+IDN    6876 |    69.1±0.8  69.0 |    73.3±0.8  73.3 |  20.9  20.5 |   4.1%  3.7% poverty | 6.8y
+COD    6613 |    60.4±0.9  59.8 |    64.2±0.9  64.0 |  74.2  73.4 |  85.3% 85.3% poverty | 11.7y
+ETH    6359 |    64.2±0.9  64.1 |    70.3±0.9  70.7 |  42.8  44.6 |  38.4% 38.6% poverty | 10.7y
+USA    5454 |    76.7±1.0  76.9 |    82.0±1.0  81.8 |   5.9   6.2 |   0.0%  1.1% gdp     | 6.0y
+BGD    5387 |    72.6±0.9  73.0 |    76.4±0.9  76.4 |  27.7  27.6 |   5.9%  5.9% poverty | 7.2y
+BRA    3944 |    72.5±1.1  72.8 |    79.2±1.1  79.0 |  15.5  13.8 |   2.7%  3.0% poverty | 8.1y
+EGY    3641 |    69.9±1.2  69.5 |    73.8±1.2  73.8 |  14.0  17.7 |   1.4%  1.4% poverty | 6.2y
+TZA    3422 |    64.7±1.2  64.2 |    69.6±1.2  69.8 |  37.7  39.0 |  51.8% 51.3% poverty | 9.0y
+MEX    3164 |    72.5±1.2  72.2 |    77.8±1.2  77.8 |  12.3  12.4 |   1.6%  1.6% poverty | 7.7y
+PHL    2793 |    66.9±1.3  66.9 |    73.0±1.3  72.8 |  25.8  27.7 |   5.3%  5.3% poverty | 10.7y
+UGA    2593 |    64.7±1.4  65.3 |    70.9±1.4  71.1 |  45.5  38.9 |  55.3% 54.4% poverty | 9.0y
+no e0 outside 3 standard errors
+
+=== 4. Income model ===
+survey-mean / GDP ratio 0.430; mu from poverty share in 83/158 countries, from GDP in the rest
+out-of-sample (GDP-basis, real poverty known, n=60): mean |model - real| poverty share 0.39 pts
+  worst: PAN 0.9% vs 3.1%, JOR 2.1% vs 0.1%, JPN 0.0% vs 1.2%, LTU 0.0% vs 1.1%, USA 0.0% vs 1.1%
+newborns: 19.2% born below $3/day; median family income $2,563/person/yr PPP
+
+=== 5. Wealth gradient (world, births-weighted) ===
+e0 poorest fifth 65.7y, richest fifth 74.3y, gap 8.6y

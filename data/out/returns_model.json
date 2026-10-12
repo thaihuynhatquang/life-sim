@@ -1,0 +1,48 @@
+{
+ "source": "Statistical model fitted to real total returns in the Jord\u00e0-Schularick-Taylor Macrohistory Database R6 (macrohistory.net; Jord\u00e0 et al. 2019, The Rate of Return on Everything, QJE), 16 countries, 1950-2020",
+ "assets": [
+  "equity",
+  "housing",
+  "bills"
+ ],
+ "mean_log": [
+  0.054549,
+  0.067932,
+  0.00675
+ ],
+ "cov_log": [
+  [
+   0.0504114,
+   0.0012819,
+   0.0016333
+  ],
+  [
+   0.0012819,
+   0.005815,
+   0.0003347
+  ],
+  [
+   0.0016333,
+   0.0003347,
+   0.001145
+  ]
+ ],
+ "df": 8,
+ "stats": {
+  "equity": {
+   "mean": 0.082,
+   "worst": -0.5795,
+   "best": 1.6358
+  },
+  "housing": {
+   "mean": 0.0735,
+   "worst": -0.2495,
+   "best": 1.1642
+  },
+  "bills": {
+   "mean": 0.0073,
+   "worst": -0.2185,
+   "best": 0.1028
+  }
+ }
+}

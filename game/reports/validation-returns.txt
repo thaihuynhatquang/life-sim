@@ -1,0 +1,9 @@
+1. Yearly real returns: model (200,000 draws) vs history (1,101 country-years)
+  equity   mean    8.3% vs    8.2% | sd   25.5% vs   23.6% | bad years    9.6% vs   10.7% | great years   15.9% vs   13.9%
+  housing  mean    7.3% vs    7.3% | sd    8.2% vs    8.6% | bad years    0.1% vs    0.3% | great years    0.9% vs    1.2%
+  bills    mean    0.7% vs    0.7% | sd    3.4% vs    3.3% | bad years    4.2% vs    5.5% | great years    9.5% vs    8.7%
+
+2. Wealth at 70 relative to the usual mix (3000 lives per strategy, same lives): model vs history
+  bank     p10 0.10 vs 0.09 | median 0.20 vs 0.21 | p90 0.42 vs 0.41
+  stocks   p10 0.33 vs 0.35 | median 1.18 vs 1.15 | p90 4.53 vs 5.09
+  housing  p10 0.70 vs 0.66 | median 1.45 vs 1.37 | p90 3.31 vs 3.30

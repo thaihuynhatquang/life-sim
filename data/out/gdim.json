@@ -1,0 +1,712 @@
+{
+ "AFG": {
+  "cor": 0.522,
+  "cohort": 1980,
+  "survey": "NRVA 2011"
+ },
+ "AGO": {
+  "cor": 0.59,
+  "cohort": 1980,
+  "survey": "IBEP-MICS 2008"
+ },
+ "ALB": {
+  "cor": 0.369,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "ARM": {
+  "cor": 0.497,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "AUS": {
+  "cor": 0.293,
+  "cohort": 1980,
+  "survey": "HILDA 2015"
+ },
+ "AUT": {
+  "cor": 0.471,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "AZE": {
+  "cor": 0.477,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "BDI": {
+  "cor": 0.412,
+  "cohort": 1980,
+  "survey": "ECVM 2013"
+ },
+ "BEL": {
+  "cor": 0.494,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "BFA": {
+  "cor": 0.606,
+  "cohort": 1980,
+  "survey": "ECVM 2009"
+ },
+ "BGD": {
+  "cor": 0.587,
+  "cohort": 1980,
+  "survey": "HIES 2010"
+ },
+ "BGR": {
+  "cor": 0.691,
+  "cohort": 1980,
+  "survey": "ESS 2012"
+ },
+ "BIH": {
+  "cor": 0.469,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "BLR": {
+  "cor": 0.388,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "BOL": {
+  "cor": 0.557,
+  "cohort": 1980,
+  "survey": "EH 2008"
+ },
+ "BRA": {
+  "cor": 0.538,
+  "cohort": 1980,
+  "survey": "PNAD 2014"
+ },
+ "BTN": {
+  "cor": 0.397,
+  "cohort": 1980,
+  "survey": "LSS 2003"
+ },
+ "BWA": {
+  "cor": 0.504,
+  "cohort": 1980,
+  "survey": "BMTHS 2015"
+ },
+ "CAF": {
+  "cor": 0.606,
+  "cohort": 1980,
+  "survey": "ECASEB 2008"
+ },
+ "CAN": {
+  "cor": 0.353,
+  "cohort": 1980,
+  "survey": "CGSS 2014"
+ },
+ "CHE": {
+  "cor": 0.377,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "CHL": {
+  "cor": 0.549,
+  "cohort": 1980,
+  "survey": "CASEN 2013"
+ },
+ "CHN": {
+  "cor": 0.493,
+  "cohort": 1980,
+  "survey": "CFPS 2012"
+ },
+ "CIV": {
+  "cor": 0.531,
+  "cohort": 1980,
+  "survey": "ENV 2008"
+ },
+ "CMR": {
+  "cor": 0.636,
+  "cohort": 1980,
+  "survey": "ECAM-III 2007"
+ },
+ "COG": {
+  "cor": 0.622,
+  "cohort": 1980,
+  "survey": "ECOM 2011"
+ },
+ "COL": {
+  "cor": 0.567,
+  "cohort": 1980,
+  "survey": "ENCV 2013"
+ },
+ "COM": {
+  "cor": 0.287,
+  "cohort": 1980,
+  "survey": "EESIC 2014"
+ },
+ "CPV": {
+  "cor": 0.302,
+  "cohort": 1980,
+  "survey": "QUIBB 2007"
+ },
+ "CYP": {
+  "cor": 0.277,
+  "cohort": 1980,
+  "survey": "ESS 2012"
+ },
+ "CZE": {
+  "cor": 0.396,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "DEU": {
+  "cor": 0.32,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "DJI": {
+  "cor": 0.23,
+  "cohort": 1980,
+  "survey": "EDAM 2017"
+ },
+ "DNK": {
+  "cor": 0.191,
+  "cohort": 1980,
+  "survey": "ESS 2014"
+ },
+ "ECU": {
+  "cor": 0.559,
+  "cohort": 1980,
+  "survey": "ECV 2013"
+ },
+ "EGY": {
+  "cor": 0.477,
+  "cohort": 1980,
+  "survey": "ELMPS 2012"
+ },
+ "ESP": {
+  "cor": 0.428,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "EST": {
+  "cor": 0.416,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "ETH": {
+  "cor": 0.474,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2013"
+ },
+ "FIN": {
+  "cor": 0.311,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "FJI": {
+  "cor": 0.373,
+  "cohort": 1980,
+  "survey": "HIES 2008"
+ },
+ "FRA": {
+  "cor": 0.395,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "GAB": {
+  "cor": 0.457,
+  "cohort": 1980,
+  "survey": "EGEP 2017"
+ },
+ "GBR": {
+  "cor": 0.296,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "GEO": {
+  "cor": 0.496,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "GHA": {
+  "cor": 0.57,
+  "cohort": 1980,
+  "survey": "GLSS 2012"
+ },
+ "GIN": {
+  "cor": 0.539,
+  "cohort": 1980,
+  "survey": "ELEP 2012"
+ },
+ "GMB": {
+  "cor": 0.386,
+  "cohort": 1980,
+  "survey": "IHS 2015"
+ },
+ "GNB": {
+  "cor": 0.584,
+  "cohort": 1980,
+  "survey": "ILAP-II 2010"
+ },
+ "GRC": {
+  "cor": 0.496,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "GTM": {
+  "cor": 0.615,
+  "cohort": 1980,
+  "survey": "ENCOVI 2014"
+ },
+ "HRV": {
+  "cor": 0.559,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "HTI": {
+  "cor": 0.517,
+  "cohort": 1980,
+  "survey": "ECVMAS 2012"
+ },
+ "HUN": {
+  "cor": 0.64,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "IDN": {
+  "cor": 0.515,
+  "cohort": 1980,
+  "survey": "IFLS 2014"
+ },
+ "IND": {
+  "cor": 0.578,
+  "cohort": 1980,
+  "survey": "IHDS 2011"
+ },
+ "IRL": {
+  "cor": 0.474,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "IRN": {
+  "cor": 0.433,
+  "cohort": 1980,
+  "survey": "HEIS 2014"
+ },
+ "IRQ": {
+  "cor": 0.498,
+  "cohort": 1980,
+  "survey": "IHSES 2012"
+ },
+ "ISL": {
+  "cor": 0.274,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "ISR": {
+  "cor": 0.404,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "ITA": {
+  "cor": 0.461,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "JOR": {
+  "cor": 0.415,
+  "cohort": 1980,
+  "survey": "JLMPS 2010"
+ },
+ "JPN": {
+  "cor": 0.329,
+  "cohort": 1980,
+  "survey": "JGSS 2012"
+ },
+ "KAZ": {
+  "cor": 0.382,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "KEN": {
+  "cor": 0.532,
+  "cohort": 1980,
+  "survey": "STEP 2013"
+ },
+ "KGZ": {
+  "cor": 0.401,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "KHM": {
+  "cor": 0.491,
+  "cohort": 1980,
+  "survey": "CSES 2012"
+ },
+ "KIR": {
+  "cor": 0.284,
+  "cohort": 1980,
+  "survey": "HIES 2006"
+ },
+ "KOR": {
+  "cor": 0.386,
+  "cohort": 1980,
+  "survey": "KLIPS 2014"
+ },
+ "LAO": {
+  "cor": 0.505,
+  "cohort": 1980,
+  "survey": "STEP 2012"
+ },
+ "LBN": {
+  "cor": 0.522,
+  "cohort": 1980,
+  "survey": "HBS 2011"
+ },
+ "LBR": {
+  "cor": 0.419,
+  "cohort": 1980,
+  "survey": "HIES 2014"
+ },
+ "LKA": {
+  "cor": 0.549,
+  "cohort": 1980,
+  "survey": "STEP 2012"
+ },
+ "LSO": {
+  "cor": 0.549,
+  "cohort": 1980,
+  "survey": "HBS 2017"
+ },
+ "LTU": {
+  "cor": 0.402,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "LVA": {
+  "cor": 0.42,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "MAR": {
+  "cor": 0.398,
+  "cohort": 1980,
+  "survey": "ENNVM 2006"
+ },
+ "MDA": {
+  "cor": 0.488,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "MDG": {
+  "cor": 0.617,
+  "cohort": 1980,
+  "survey": "ENEMPSI 2012"
+ },
+ "MDV": {
+  "cor": 0.138,
+  "cohort": 1980,
+  "survey": "HIES 2009"
+ },
+ "MEX": {
+  "cor": 0.507,
+  "cohort": 1980,
+  "survey": "EMOVI 2011"
+ },
+ "MKD": {
+  "cor": 0.571,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "MLI": {
+  "cor": 0.599,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2014"
+ },
+ "MMR": {
+  "cor": 0.613,
+  "cohort": 1980,
+  "survey": "MPLCS 2015"
+ },
+ "MNE": {
+  "cor": 0.571,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "MNG": {
+  "cor": 0.346,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "MOZ": {
+  "cor": 0.502,
+  "cohort": 1980,
+  "survey": "IOF 2008"
+ },
+ "MRT": {
+  "cor": 0.392,
+  "cohort": 1980,
+  "survey": "EPCV 2008"
+ },
+ "MUS": {
+  "cor": 0.18,
+  "cohort": 1980,
+  "survey": "HBS 2012"
+ },
+ "MWI": {
+  "cor": 0.468,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2013"
+ },
+ "MYS": {
+  "cor": 0.424,
+  "cohort": 1980,
+  "survey": "KMS 2015"
+ },
+ "NAM": {
+  "cor": 0.606,
+  "cohort": 1980,
+  "survey": "NHIES 2015"
+ },
+ "NER": {
+  "cor": 0.431,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2014"
+ },
+ "NGA": {
+  "cor": 0.527,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2012"
+ },
+ "NLD": {
+  "cor": 0.348,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "NOR": {
+  "cor": 0.352,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "NPL": {
+  "cor": 0.494,
+  "cohort": 1980,
+  "survey": "LSS 2011"
+ },
+ "NZL": {
+  "cor": 0.294,
+  "cohort": 1980,
+  "survey": "ISSP 1999"
+ },
+ "PAK": {
+  "cor": 0.566,
+  "cohort": 1980,
+  "survey": "PIHS 2013"
+ },
+ "PAN": {
+  "cor": 0.631,
+  "cohort": 1980,
+  "survey": "ENV 2008"
+ },
+ "PER": {
+  "cor": 0.522,
+  "cohort": 1980,
+  "survey": "ENAHO 2014"
+ },
+ "PHL": {
+  "cor": 0.184,
+  "cohort": 1980,
+  "survey": "FIES 2012"
+ },
+ "PNG": {
+  "cor": 0.354,
+  "cohort": 1980,
+  "survey": "HIES 2009"
+ },
+ "POL": {
+  "cor": 0.446,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "PRT": {
+  "cor": 0.452,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "PSE": {
+  "cor": 0.403,
+  "cohort": 1980,
+  "survey": "PECS 2011"
+ },
+ "ROU": {
+  "cor": 0.646,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "RUS": {
+  "cor": 0.48,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "RWA": {
+  "cor": 0.402,
+  "cohort": 1980,
+  "survey": "EICV-IV 2013"
+ },
+ "SDN": {
+  "cor": 0.53,
+  "cohort": 1980,
+  "survey": "NBHS 2009"
+ },
+ "SEN": {
+  "cor": 0.571,
+  "cohort": 1980,
+  "survey": "ESPS-II 2011"
+ },
+ "SLB": {
+  "cor": 0.464,
+  "cohort": 1980,
+  "survey": "HIES 2013"
+ },
+ "SLE": {
+  "cor": 0.554,
+  "cohort": 1980,
+  "survey": "SLIHS 2011"
+ },
+ "SRB": {
+  "cor": 0.498,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "SSD": {
+  "cor": 0.466,
+  "cohort": 1980,
+  "survey": "NBHS 2009"
+ },
+ "STP": {
+  "cor": 0.305,
+  "cohort": 1980,
+  "survey": "IOF 2010"
+ },
+ "SVK": {
+  "cor": 0.459,
+  "cohort": 1980,
+  "survey": "ESS 2012"
+ },
+ "SVN": {
+  "cor": 0.369,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "SWE": {
+  "cor": 0.473,
+  "cohort": 1980,
+  "survey": "ESS 2016"
+ },
+ "SWZ": {
+  "cor": 0.532,
+  "cohort": 1980,
+  "survey": "HIES 2009"
+ },
+ "TCD": {
+  "cor": 0.497,
+  "cohort": 1980,
+  "survey": "ECOSIT-III 2011"
+ },
+ "TGO": {
+  "cor": 0.558,
+  "cohort": 1980,
+  "survey": "QUIBB 2015"
+ },
+ "THA": {
+  "cor": 0.439,
+  "cohort": 1980,
+  "survey": "SES 2012"
+ },
+ "TJK": {
+  "cor": 0.327,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "TLS": {
+  "cor": 0.315,
+  "cohort": 1980,
+  "survey": "LSMS 2007"
+ },
+ "TON": {
+  "cor": 0.211,
+  "cohort": 1980,
+  "survey": "HIES 2009"
+ },
+ "TUN": {
+  "cor": 0.43,
+  "cohort": 1980,
+  "survey": "TLMPS 2014"
+ },
+ "TUR": {
+  "cor": 0.502,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "TUV": {
+  "cor": 0.466,
+  "cohort": 1980,
+  "survey": "HIES 2010"
+ },
+ "TWN": {
+  "cor": 0.455,
+  "cohort": 1980,
+  "survey": "TSCS 2015"
+ },
+ "TZA": {
+  "cor": 0.48,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2012"
+ },
+ "UGA": {
+  "cor": 0.547,
+  "cohort": 1980,
+  "survey": "LSMS-ISA 2014"
+ },
+ "UKR": {
+  "cor": 0.413,
+  "cohort": 1980,
+  "survey": "ESS 2012"
+ },
+ "USA": {
+  "cor": 0.42,
+  "cohort": 1980,
+  "survey": "PSID 2015"
+ },
+ "UZB": {
+  "cor": 0.336,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "VNM": {
+  "cor": 0.575,
+  "cohort": 1980,
+  "survey": "STEP 2012"
+ },
+ "VUT": {
+  "cor": 0.481,
+  "cohort": 1980,
+  "survey": "HIES 2010"
+ },
+ "XKX": {
+  "cor": 0.362,
+  "cohort": 1980,
+  "survey": "LITS 2016"
+ },
+ "YEM": {
+  "cor": 0.348,
+  "cohort": 1980,
+  "survey": "HBS 2014"
+ },
+ "ZAF": {
+  "cor": 0.371,
+  "cohort": 1980,
+  "survey": "NIDS 2014"
+ },
+ "ZMB": {
+  "cor": 0.312,
+  "cohort": 1980,
+  "survey": "LCMS-VI 2010"
+ }
+}

@@ -1,0 +1,2 @@
+# Mostly stdlib. xlrd only for extract_china.py (old .xls census tables).
+xlrd>=2.0

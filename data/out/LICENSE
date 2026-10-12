@@ -1,0 +1,13 @@
+The data files in this folder are the project's own computations from third-party
+sources (selected, aggregated, imputed and reweighted). They are licensed under the
+Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0):
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Attribution: credit this project and the original sources listed in ATTRIBUTION.md
+at the root of the repository. The sources' own terms continue to apply to the
+underlying figures (for example WHO's additional terms, the IMF's permission
+requirement for commercial reuse, and the attribution rules of UNHCR and the OECD).
+None of the providers endorses this project.
+
+returns_model.json holds only summary statistics computed from the Jorda-Schularick-
+Taylor Macrohistory Database; the database itself (CC BY-NC-SA 4.0) is not included.

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Lifesim · Simulate the life you could have had</title>
+  <meta name="description" content="Chào đời ở một nơi bất kỳ trên Trái Đất, sống trọn một kiếp người với xác suất lấy từ số liệu thật của từng nước, rồi nối dõi qua các thế hệ. Miễn phí, mã nguồn mở, chạy ngay trong trình duyệt.">
+  <meta property="og:title" content="Lifesim · Simulate the life you could have had">
+  <meta property="og:description" content="A life simulation built on real data: be born anywhere on Earth, live year by year with the odds of your country, then carry on your family line. Free and open source.">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="life simulator, life simulation game, birth lottery, open source game, browser game, real data, game mô phỏng cuộc đời, mô phỏng đời người">
+  <meta name="twitter:card" content="summary">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "VideoGame", "name": "Lifesim",
+   "alternateName": "Lifesim: Simulate the life you could have had",
+   "description": "A free, open-source life simulator in the browser: be born anywhere on Earth with real-world odds and live year by year. Every probability comes from real data (UN, World Bank, WHO, ILO, UNESCO).",
+   "genre": ["Simulation", "Life simulation", "Text game"], "gamePlatform": "Web browser", "applicationCategory": "Game",
+   "operatingSystem": "Any", "inLanguage": ["vi", "en"], "isAccessibleForFree": true,
+   "author": {"@type": "Person", "name": "Thái Huy Nhật Quang"},
+   "license": "https://opensource.org/licenses/MIT",
+   "sameAs": "https://github.com/thaihuynhatquang/life-sim"}
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='28.5' fill='none' stroke='%23e2574c' stroke-width='3' stroke-dasharray='5 3.5'/><path d='M24 14 V39 C24 46 29 48.5 35 46.5 C41 44.5 44 39 50 40.5' fill='none' stroke='%232b2d42' stroke-width='6.5' stroke-linecap='round' stroke-linejoin='round'/><circle cx='43' cy='21' r='5' fill='%23e2574c'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Patrick+Hand&family=Sriracha&display=swap">
+  <!-- Flag emoji: Windows has no flag glyphs, so flags use Noto Color Emoji (only the flag subset is downloaded). -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap">
+  <link rel="stylesheet" href="/src/ui/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" id="home" href="#" title="Trang chính"><svg class="logo-svg" width="34" height="34" aria-hidden="true" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28.5" fill="none" stroke="var(--thread, #e2574c)" stroke-width="3" stroke-dasharray="5 3.5"/><path d="M24 14 V39 C24 46 29 48.5 35 46.5 C41 44.5 44 39 50 40.5" fill="none" stroke="var(--ink, #2b2d42)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="43" cy="21" r="5" fill="var(--thread, #e2574c)"/></svg><h1 id="title">Lifesim</h1></a>
+    <div class="tools">
+      <a id="repo" class="pill-btn gh" href="#" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <button id="settings-btn" type="button" class="pill-btn gear" aria-haspopup="true" aria-expanded="false" aria-controls="settings" aria-label="Cài đặt">⚙️</button>
+      <div id="settings" class="settings" role="dialog" aria-label="Cài đặt" hidden></div>
+    </div>
+  </header>
+  <main>
+    <p id="loading"><span class="spin" aria-hidden="true">🌍</span> Đang tải số liệu…</p>
+    <section id="intro">
+      <h2>Lifesim · Simulate the life you could have had</h2>
+      <p>Lifesim là game mô phỏng cuộc đời miễn phí, mã nguồn mở, chạy ngay trong trình duyệt. Bạn chào đời ở một nơi bất kỳ trên Trái Đất, với xác suất thật của từng nước, rồi sống từng năm: đi học, đi làm, kết hôn, sinh con, di cư, bệnh tật, tiền bạc, tuổi già. Mọi xác suất lấy từ số liệu thật (Liên Hợp Quốc, World Bank, WHO, ILO, UNESCO), nguồn ghi ngay dưới mỗi sự kiện. Hết một đời, bạn sống tiếp đời con.</p>
+      <p>Lifesim is a free, open-source life simulator in your browser. Be born anywhere on Earth with the real odds of each country and live year by year: school, work, marriage, children, migration, illness, money and old age. Every probability comes from real data (UN, World Bank, WHO, ILO, UNESCO), with the source under each event. When a life ends, carry on as your child.</p>
+      <noscript><p>Lifesim cần JavaScript để chạy. / Lifesim needs JavaScript to run.</p></noscript>
+    </section>
+    <div id="game" hidden>
+      <aside id="status" aria-live="polite"></aside>
+      <section class="story">
+        <ol id="timeline"></ol>
+        <div id="controls"></div>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="/src/ui/main.ts"></script>
+</body>
+</html>

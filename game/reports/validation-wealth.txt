@@ -1,0 +1,37 @@
+=== 1. Interpolation: wealth at p85 vs average of the p80 and p90 thresholds (log scale), 10 big countries
+  IND p85 model $75,994 | geometric mean of p80,p90 $75,994
+  CHN p85 model $145,375 | geometric mean of p80,p90 $145,375
+  USA p85 model $705,056 | geometric mean of p80,p90 $705,056
+  IDN p85 model $122,768 | geometric mean of p80,p90 $122,768
+  PAK p85 model $65,183 | geometric mean of p80,p90 $65,183
+  NGA p85 model $69,996 | geometric mean of p80,p90 $69,996
+  BRA p85 model $99,389 | geometric mean of p80,p90 $99,389
+  BGD p85 model $84,284 | geometric mean of p80,p90 $84,284
+  RUS p85 model $146,726 | geometric mean of p80,p90 $146,726
+  MEX p85 model $98,265 | geometric mean of p80,p90 $98,265
+
+=== 2. Billionaires: modelled share of adults vs Forbes count / WID adults (2,000,000 draws per country not needed: analytic)
+  billionaires: model 3277 vs Forbes 3277 (matched countries)
+  largest gaps: IND 229/229, CHN 539/539, JPN 41/41, NGA 4/4, MEX 22/22
+  countries off by >20%: none
+
+=== 3. Chance of being a billionaire as an adult (born where births happen): 1 in 3,043,937
+  USA: 1 in 265,738
+  CHN: 1 in 2,057,508
+  IND: 1 in 4,219,573
+  DEU: 1 in 325,134
+  VNM: 1 in 14,044,658
+  NGA: 1 in 27,795,422
+  BRA: 1 in 2,220,457
+  ETH: none listed
+  CHE: 1 in 158,926
+  SGP: 1 in 87,491
+
+=== 4. Wealth of a random adult (world, births-weighted draws, 2021 PPP $)
+  p10: $152
+  p50: $14,894
+  p90: $138,436
+  p99: $1,048,494
+  p99.9: $4,411,207
+  p99.99: $23,086,846
+  share of draws above $1m PPP: 1.1% ; above $10m: 0.0%

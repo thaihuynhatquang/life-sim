@@ -1,0 +1,32 @@
+{
+  "name": "lifesim",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4"
+  },
+  "description": "Lifesim: an open-source, data-driven life simulator in the browser. Be born anywhere on Earth with real odds and live year by year.",
+  "keywords": [
+    "life simulator",
+    "life simulation",
+    "birth lottery",
+    "text game",
+    "browser game",
+    "open data",
+    "demographics",
+    "statistics",
+    "world bank",
+    "united nations",
+    "dynasty",
+    "vietnamese",
+    "vite",
+    "typescript"
+  ],
+  "license": "MIT"
+}

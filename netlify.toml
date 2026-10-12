@@ -1,0 +1,9 @@
+# Netlify: the game is a static Vite site. The data files in data/out/ are copied into the build
+# (vite.config.ts sets publicDir to ../data/out), so no server is needed.
+[build]
+  base = "game"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"

@@ -1,0 +1,85 @@
+simulated 100,000 full lives in 81.8s
+
+metric                                 sim    real   mean |err| over countries (n>=300)
+life expectancy                       70.4    70.2     0.4  worst: BDI 60.7/63.7, MYS 78.6/76.7, PER 79.6/77.7
+die before 5 (per 1000)               37.0    36.9     2.6  worst: BDI 84.9/48.8, GIN 72.0/93.1, MMR 24.5/39.3
+born with electricity %               83.9    83.9     0.4  worst: ZMB 48.6/53.6, AGO 51.0/55.5, GIN 56.8/53.8
+born with basic water %               85.7    85.9     0.7  worst: BFA 54.7/50.0, BDI 62.6/65.9, ZWE 70.0/67.2
+born with basic sanitation %          70.7    70.9     0.6  worst: GHA 36.4/31.6, SOM 47.8/44.5, MWI 52.0/49.2
+born with clean cooking %             61.7    61.7     0.4  worst: AGO 53.1/56.0, SEN 36.2/39.0, NPL 42.6/45.0
+urban-born in slums %                 28.9    28.6     1.0  worst: MOZ 47.7/55.0, VNM 38.2/32.5, GHA 28.9/33.5
+birth registered %                    73.6    73.5     0.5  worst: ZWE 52.3/48.7, MOZ 57.9/55.0, SEN 81.4/78.7
+stunted %                             24.6    24.5     0.7  worst: ZMB 38.6/34.6, GIN 22.6/26.1, THA 15.5/12.4
+finished primary %                    81.7    81.3     0.8  worst: NPL 79.4/83.2, MLI 49.9/47.2, BDI 50.6/53.3
+finished lower secondary %            66.9    66.5     0.9  worst: SYR 52.9/46.0, ARG 79.0/74.1, MYS 87.1/83.2
+finished upper secondary %            44.0    43.6     0.9  worst: SYR 35.3/28.5, ARG 60.4/55.0, MYS 66.9/62.0
+university % (cap: upper-sec finishers)    32.9    32.5     0.9  worst: SYR 34.7/28.5, ARG 60.2/55.0, KAZ 57.3/52.9
+women married <18 %                   21.2    21.4     1.0  worst: NER 73.2/76.3, TUR 11.9/14.7, AGO 20.8/23.1
+women married before 25 %             66.4    67.0     1.2  worst: CMR 63.5/69.5, MLI 94.1/88.8, DZA 45.3/41.8
+women ever married by 48 %            95.6    95.7     0.3  worst: ZAF 66.8/68.7, SDN 95.5/94.2, KEN 94.2/95.3
+men ever married by 48 %              95.1    95.2     0.4  worst: BRA 87.6/85.2, USA 82.3/84.3, ZAF 76.4/77.8
+women 42: divorced/separated % of ever-married     5.3     5.6     0.7  worst: RUS 17.3/20.3, MEX 9.9/7.0, NER 5.8/3.5
+men 42: divorced/separated % of ever-married     3.2     3.2     0.7  worst: RUS 10.8/14.1, USA 16.9/19.6, GHA 9.5/7.1
+women 62: widowed % of ever-married    24.2    30.6     7.3  worst: BGD 24.4/39.7, IRQ 25.0/38.5, IDN 26.7/39.9
+men 62: widowed % of ever-married      5.2     6.1     1.0  worst: EGY 5.7/8.5, IRQ 1.8/4.1, TZA 4.0/5.9
+women 35 living with HIV %             1.5     1.4     0.2  worst: ZAF 34.4/28.2, GHA 4.0/2.6, UGA 6.5/7.9
+men 35 living with HIV %               1.0     1.0     0.2  worst: MOZ 11.9/10.2, UGA 6.2/4.7, RUS 0.9/2.2
+living abroad at 45 % (born here)      3.4     3.3     0.3  worst: VEN 27.7/22.7, GBR 9.2/6.5, SOM 11.9/9.5
+refugees % of emigrants               17.7    18.2     NaN  worst: 
+unemployed % of time, workers 15-24    13.5    13.8     0.9  worst: IRQ 30.9/46.7, EGY 18.7/24.5, IRN 20.0/25.1
+unemployed % of time, workers 25+      4.1     4.2     0.5  worst: YEM 11.5/18.8, IRQ 11.2/16.1, ZAF 32.2/29.1
+living with diabetes at 55 %          20.5    20.7     0.7  worst: BFA 19.0/15.3, TCD 10.9/14.4, MYS 37.0/34.1
+living with hypertension at 52 %      35.9    35.9     0.9  worst: GBR 27.0/32.3, TCD 43.3/38.7, SEN 35.0/39.1
+women with account at 35 %            61.6    61.4     1.3  worst: UZB 54.8/60.7, CIV 49.8/53.8, TZA 58.1/54.9
+account at 35 %, poorest 40%          58.1    57.7     1.3  worst: TZA 56.7/50.9, VNM 53.0/48.1, AFG 17.3/13.8
+account at 35 %, richest 60%          70.6    70.4     1.0  worst: MMR 66.0/57.7, ZAF 89.5/84.8, MEX 66.4/62.0
+obese at 50 % (model at that age)     17.2    17.4     0.6  worst: GBR 35.1/30.2, SEN 15.9/11.5, COL 29.4/26.4
+alcohol use disorder at 40 %           3.7     3.6     0.4  worst: CIV 11.9/9.2, KAZ 7.3/5.4, PER 5.2/7.1
+adult height, cm                     162.3   162.3     0.1  worst: THA 162.7/163.7, GIN 163.0/162.4, SAU 161.0/161.6
+pension at 70 %                       51.1    50.6     1.0  worst: AFG 31.8/24.7, MAR 32.4/25.5, YEM 17.6/22.5
+living alone at 82 %                  16.6    13.7     3.0  worst: PHL 18.6/10.7, RUS 42.0/34.2, EGY 27.6/20.4
+living with children at 70 %          54.5    56.9     2.7  worst: ZAF 32.0/43.7, COL 45.6/53.3, CHN 52.7/58.9
+men employees 40: monthly earnings vs ILO (ratio x100)    94.2   100.0     5.5  worst: BRA 92.2/100.0, IND 93.0/100.0, USA 93.3/100.0
+women employees 40: monthly earnings vs ILO (x100)    92.2   100.0     4.9  worst: BRA 92.2/100.0, USA 93.7/100.0, CHN 94.7/100.0
+below $3/day at 40 (household per person) %    16.8    17.1     0.7  worst: TCD 34.0/39.5, MDG 64.7/69.2, ZMB 68.2/71.7
+positive net worth at 50 %            90.8    91.1     1.6  worst: FRA 91.2/98.7, RUS 87.2/93.0, AFG 83.5/89.0
+years with impoverishing health bill %    22.6    24.2     1.7  worst: COD 49.9/58.6, BDI 46.7/55.3, NGA 37.1/42.2
+years with large health bill %         5.0     5.3     0.3  worst: BGD 12.8/14.1, SDN 7.1/8.1, EGY 15.0/15.9
+life satisfaction at 20 (0-10)         5.1     5.1     0.1  worst: AFG 1.8/1.4, MLI 4.8/4.6, MDG 4.4/4.2
+life satisfaction at 40 (0-10)         5.1     5.1     0.1  worst: AFG 1.8/1.4, MLI 4.9/4.6, BFA 4.7/4.5
+life satisfaction at 60 (0-10)         5.0     5.1     0.1  worst: THA 6.0/6.3, TCD 4.1/4.4, AFG 1.7/1.4
+births at 15-19 per woman (alive at 20)    0.25    0.24    0.02  worst: IRQ 0.37/0.30, MDG 0.73/0.66, MEX 0.37/0.30
+children per woman (alive at 50)      2.78    2.77    0.07  worst: NER 5.64/6.06, YEM 4.28/4.59, UZB 3.81/3.50
+women working at 25-54 %              61.7    61.0     1.1  worst: MLI 69.9/62.1, UZB 62.3/58.3, KEN 76.6/80.6
+men working at 25-54 %                92.0    92.0     0.5  worst: SDN 93.2/90.9, CIV 96.6/94.8, AGO 94.5/92.8
+working at 59 (55-64 mid) % both sexes    61.8    62.1     0.8  worst: FRA 69.1/63.7, COL 55.7/61.0, THA 64.9/69.9
+working at 71 (65+ mean) % both sexes    29.4    29.7     1.2  worst: TZA 57.5/62.4, FRA 9.3/4.5, CMR 50.1/54.2
+workers at 40 in agriculture %        33.0    35.3     3.5  worst: SDN 46.5/63.2, AFG 47.9/62.0, PAK 36.2/47.8
+workers at 40 informal %              70.7    71.5     1.3  worst: AFG 80.8/90.0, IRQ 64.7/58.0, BGD 82.2/87.0
+workers at 40 employees %             44.2    42.8     1.7  worst: SDN 30.0/17.1, AFG 23.1/11.8, YEM 48.1/41.3
+vocational % of upper-sec non-graduates    35.9    37.8     2.0  worst: ETH 51.5/64.9, COD 29.2/38.7, PAK 5.6/9.9
+smokers at 30 %                       17.9    18.1     0.8  worst: ITA 13.7/22.6, TUR 26.7/31.8, RUS 23.6/26.5
+
+lost both parents before 18: 0.7% of those reaching 18
+parents who outlived at least one child: 34.6%
+
+note: university target = min(gross tertiary enrollment capped at 90%, upper-secondary completion);
+gross enrollment counts older students too, so it can exceed the share of a cohort that can enter.
+widowhood: survey data (median 2012) reflect husbands who died under past, higher mortality; the
+simulation uses today's life tables, so it should come out somewhat lower, mostly for women.
+
+causes of death (share of all simulated deaths; WHO = expected from each death's country/sex/age mix):
+  by kind:  ncd  62.8/62.6% | infection  16.1/16.2% | cancer  11.8/11.8% | injury   5.0/4.9% | neonatal   1.4/1.3% | selfharm   0.7/0.8% | nutrition   0.6/0.6% | violence   0.7/0.6% | maternal   0.6/0.6% | congenital   0.4/0.4%
+  alcohol 0.1/0.2% | HIV 1.0/1.1% | maternal 0.6/0.6% | diabetes 4.3/4.4% | hypertensive heart 3.7/3.8%
+  top causes: heart 16.0/16.0% | stroke 12.5/12.4% | copd 6.6/6.6% | pneumonia 5.2/5.3% | diabetes 4.3/4.4% | hypertension 3.7/3.8% | dementia 3.6/3.5% | kidney 3.2/3.1% | tb 2.8/2.8% | diarrhoea 2.7/2.7%
+
+under-5 mortality, poorest vs richest fifth (DHS countries, births-weighted geometric mean): sim 2.41x, DHS surveys 2.47x
+
+occupations of workers at 40 (ISCO 0..9, % of workers):
+  sim                   0.4  3.5  9.8  5.6  4.1 17.9 25.7 11.0  7.5 14.4
+  ILO by age band       0.3  3.6  9.9  5.6  4.0 17.8 25.7 11.1  7.5 14.4   TVD 0.2 pts
+  ILO by education      0.3  4.5 14.5  6.0  4.8 16.1 26.1  9.3  5.5 13.1   TVD 7.1 pts
+tertiary field of study (% of graduates, 10 fields):
+  sim                  13.2  8.7 12.9 25.2  6.7  5.1 13.2  2.1 10.0  2.9
+  UNESCO               13.5  8.7 13.0 25.0  7.0  4.9 13.1  2.2  9.6  2.9   TVD 0.8 pts
+workers who changed occupation group at least once: 62%

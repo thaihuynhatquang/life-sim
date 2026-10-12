@@ -1,0 +1,17 @@
+estate = played parent's net worth at death / number of children: 11514/11514
+21996 parent-child lives in 45s; played parent dies at the same age in the child's life: 19302/19302
+schooling correlation parent-child: simulated vs GDIM (countries with 300+ pairs)
+  IND  3764 pairs  sim 0.54  GDIM 0.58
+  PAK  1208 pairs  sim 0.55  GDIM 0.57
+  CHN  1046 pairs  sim 0.47  GDIM 0.49
+  NGA   979 pairs  sim 0.46  GDIM 0.53
+  IDN   751 pairs  sim 0.44  GDIM 0.52
+  ETH   714 pairs  sim 0.47  GDIM 0.47
+  COD   714 pairs  sim 0.50  GDIM 0.50
+  BGD   586 pairs  sim 0.57  GDIM 0.59
+  USA   526 pairs  sim 0.17  GDIM 0.42
+  EGY   459 pairs  sim 0.45  GDIM 0.48
+  TZA   410 pairs  sim 0.44  GDIM 0.48
+  BRA   332 pairs  sim 0.56  GDIM 0.54
+  UGA   311 pairs  sim 0.52  GDIM 0.55
+mean |error| 0.05 over 13 countries

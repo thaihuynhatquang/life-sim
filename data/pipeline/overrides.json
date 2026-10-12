@@ -1,0 +1,24 @@
+{
+  "_doc": "Hand-entered values for gaps that peer-median imputation gets badly wrong. Each entry: value, source, confidence (high|medium|low). Applied after WB/WPP/IMF and before imputation.",
+  "CHN": {
+    "hiv": {
+      "value": 0.1,
+      "source": "UNAIDS estimate (~1.3M people living with HIV)",
+      "confidence": "medium"
+    }
+  },
+  "RUS": {
+    "hiv": {
+      "value": 1.2,
+      "source": "Russian Federal AIDS Centre: ~1.2 million people living with HIV (~0.8% of the whole population, higher at 15-49); UNAIDS publishes no estimate",
+      "confidence": "medium"
+    }
+  },
+  "USA": {
+    "hiv": {
+      "value": 0.4,
+      "source": "CDC: ~1.2 million people living with HIV (~0.36% of the population, slightly higher at 15-49)",
+      "confidence": "medium"
+    }
+  }
+}
